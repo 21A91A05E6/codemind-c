@@ -1,17 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int i,n,j,a[100][100],m,sum=0,max=0,max1=0;
-    scanf("%d%d",&n,&m);
-    for(i=0;i<n;i++)
+     int a[100][100],i,n,m,j,sum=0,max=0,max1=0;
+     scanf("%d%d",&n,&m);
+     for(i=0;i<n;i++)
      {
           for(j=0;j<m;j++)
           {
                scanf("%d",&a[i][j]);
           }
-     }    
-    for(i=0;i<n;i++)
-    {
+     }      
+     
+     for(i=0;i<n;i++)
+     {
         sum=0;
         for(j=0;j<m;j++)
         {
@@ -21,8 +22,8 @@ int main()
         {
             max=sum;
         }
-    }
-    for(j=0;j<m;j++)
+     } 
+     for(j=0;j<m;j++)
      {
         sum=0;
         for(i=0;i<n;i++)
