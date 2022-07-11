@@ -9,7 +9,7 @@ int main()
     }
     for(i=n-1;i>=0;i--)
     {
-       if(arr[i]%2)
+       if(arr[i]%2!=0)
        {
            d=arr[i];
        }
